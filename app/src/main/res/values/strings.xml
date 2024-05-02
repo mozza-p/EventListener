@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EventListener</string>
+    <string-array name="grup_usia">
+        <item>Dewasa</item>
+        <item>Anak-anak</item>
+    </string-array>
 </resources>
