@@ -143,7 +143,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="300dp"

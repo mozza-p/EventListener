@@ -56,34 +56,34 @@ class BMI_Activity : AppCompatActivity() {
         }
     }
 
-    private fun resultBMIDewasa(bmiDewasa: Float) {
-        result.text = bmiDewasa.toString()
+    private fun resultBMIDewasa(bmi: Float) {
+        result.text = bmi.toString()
         when {
-            bmiDewasa < 18.5 -> {
+            bmi < 18.5 -> {
                 Toast.makeText(this, "Underweight", Toast.LENGTH_LONG).show()
             }
-            bmiDewasa in 18.5..25.0 -> {
+            bmi in 18.5..25.0 -> {
                 Toast.makeText(this, "Healthy", Toast.LENGTH_LONG).show()
             }
-            bmiDewasa in 25.0..29.9 -> {
+            bmi in 25.0..29.9 -> {
                 Toast.makeText(this, "Overweight", Toast.LENGTH_LONG).show()
             }
-            bmiDewasa >= 30.0 -> {
+            bmi >= 30.0 -> {
                 Toast.makeText(this, "Obesity", Toast.LENGTH_LONG).show()
             }
         }
     }
 
-    private fun resultBMIAnak(bmiAnak: Float) {
-        result.text = bmiAnak.toString()
+    private fun resultBMIAnak(bmi: Float) {
+        result.text = bmi.toString()
         when {
-            bmiAnak < 13.0 -> {
+            bmi< 13.0 -> {
                 Toast.makeText(this, "Underweight", Toast.LENGTH_LONG).show()
             }
-            bmiAnak in 13.0..20.8 -> {
+            bmi in 13.0..20.8 -> {
                 Toast.makeText(this, "Healthy", Toast.LENGTH_LONG).show()
             }
-            bmiAnak > 20.8 -> {
+            bmi > 20.8 -> {
                 Toast.makeText(this, "Overweight", Toast.LENGTH_LONG).show()
             }
         }
